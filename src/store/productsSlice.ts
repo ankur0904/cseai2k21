@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { Product , ProductsState } from '../types/product';  // Importing Product and ProductsState types
+import { ProductsState } from '../types/product';  // Importing Product and ProductsState types
 import { fetchProducts } from '../services/api';
 
 // Initial state with ProductsState type
