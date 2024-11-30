@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-800 font-sans transition-colors duration-300;
+}
+
+h1 {
+  @apply text-3xl md:text-4xl font-bold text-center text-gray-800 mt-4 mb-6;
+}
+
+input[type="text"] {
+  @apply w-full max-w-lg mx-auto block border-2 border-gray-300 rounded-lg p-2 text-gray-700 shadow-sm focus:outline-none focus:border-blue-400 focus:ring focus:ring-blue-200;
+}
+
+.card {
+  @apply border rounded-lg p-4 shadow-md bg-white transition-transform transform hover:scale-105 hover:shadow-lg;
+}
+
+.card img {
+  @apply w-full h-48 object-contain mb-4 rounded-md bg-gray-100;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-gray-800 truncate;
+}
+
+.card-price {
+  @apply text-gray-700 font-medium;
+}
+
+.card-rating {
+  @apply flex items-center space-x-2 mt-2 text-yellow-500;
+}
+
+button {
+  @apply px-4 py-2 font-semibold text-sm text-gray-800 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75;
+}
+
+button.dark {
+  @apply bg-gray-700 text-gray-100 hover:bg-gray-600 focus:ring-gray-500;
+}
+
+body.dark {
+  @apply bg-gray-900 text-gray-100 transition-colors duration-300;
+}
+
+.card.dark {
+  @apply bg-gray-800 text-gray-100 border-gray-700;
+}
+
+input[type="text"].dark {
+  @apply border-gray-700 bg-gray-800 text-gray-200 focus:border-blue-500;
+}
+
+h1.dark {
+  @apply text-gray-100;
+}
+
+.grid {
+  @apply gap-6 mt-4;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    @apply grid-cols-1;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    @apply grid-cols-2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    @apply grid-cols-3;
+  }
+}
