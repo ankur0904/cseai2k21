@@ -16,7 +16,7 @@ A responsive e-commerce product catalog built using Vite, React, Redux, and Tail
 
 3. Install dependencies:
    ```bash
-   npm install
+  ` npm install`
    ```
 
 4. Run the development server:
@@ -25,7 +25,7 @@ A responsive e-commerce product catalog built using Vite, React, Redux, and Tail
    ```
 
 5. Open the app in your browser:
-   Go to `http://localhost:3000`.
+   Go to `http://localhost:5173`.
 
 ## Login Credentials
 - There are no login credentials required for this app.
