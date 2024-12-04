@@ -53,6 +53,8 @@ const App: React.FC = () => {
       {status === 'loading' && <p>Loading...</p>}
       {status === 'failed' && <p>Error fetching products.</p>}
       {status === 'succeeded' && <ProductList products={products} />}
+      <p className="mb-3 text-lg text-gray-500 md:text-xl dark:text-gray-400">Non uploaded paper must be uploaded soon</p>
+
     </div>
   );
 };
