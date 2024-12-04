@@ -1,6 +1,4 @@
 import React from 'react';
-import { Product } from '../types/product';
-
 const ProductCard: React.FC<{ title: string; image: string; href: string }> = ({ title, image, href }) => {
   return (
     <a className="card" href={href}>
